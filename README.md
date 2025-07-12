@@ -25,3 +25,28 @@ next find hemeshp_1.0-1_all.deb file
 in terminal type sudo dpkg -i hemeshp_1.0-1_all.deb,and .dnf fedora and arch linux with tar.pkg.zst
 
 you have installed it now you can create file which has .hp extention 
+
+# How to use it:
+
+Simple commands
+
+> #!/usr/bin/hemeshp
+> target system {
+> say "foo"
+> run "sudo pacman -Sy package-xyz"
+> }
+>
+> target foo {
+>say "hello hemeshp"
+> run "sudo apt install xyz"
+> }
+>
+How to run them save the file ex-build.hp
+
+go to the directory where you saved the file 
+
+type ./build.hp system to run commands which are for system
+or ./build.hp foo to run commands which are for foo
+> }
+>
+> }
