@@ -30,17 +30,16 @@ you have installed it now you can create file which has .hp extention
 
 Simple commands
 
-> #!/usr/bin/hemeshp
-> target system {
-> say "foo"
-> run "sudo pacman -Sy package-xyz"
-> }
->
-> target foo {
->say "hello hemeshp"
-> run "sudo apt install xyz"
-> }
->
+ #!/usr/bin/hemeshp
+ target system {
+ say "foo"
+ run "sudo pacman -Sy package-xyz"
+ }
+ target foo {
+say "hello hemeshp"
+ run "sudo apt install xyz"
+}
+
 How to run them save the file ex-build.hp
 
 go to the directory where you saved the file 
